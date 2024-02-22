@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --c1: #F6B17A;
+    --c2:  #424769;
+    --c3: #939cd3;
+    
+    --fonte-primaria:'Montserrat', sans-serif;
+    --font-secundaria:'Krona One', sans-serif;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--c2);
+    text-align: justify;
+}
+
+main { 
+    width: 80%;
+    display: flex;
+}
+
+.curriculo__titulo{
+    display: flex;
+    align-items: flex-start;
+    font-family:var(--font-secundaria);
+    color: var(--c1);
+    font-size: 1.75rem;
+}
+
+.curriculo {
+    display: flex;
+    padding: 10%;
+    width: 25%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.curriculo__texto {
+    display: flex;
+    width: 150%;
+    padding: 0 5% 0 0;
+    align-items: center;
+    justify-content: space-between;
+    font-family:var(--font-secundaria);
+    color: var(--c3);
+    font-size: 0.875rem;
+    
+}
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 50px;
+}
+
+.cabecalho__menu__links {
+    font-size: 1.5rem;
+    color: var(--c3);
+    text-decoration: none;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+}
+.cabecalho__menu__links:hover {
+    font-size: 1.4rem;
+    color: var(--c1);
+}
+.curriculo__titulo2 {
+    font-family:var(--font-secundaria);
+    color: var(--c1);
+    font-size: 1.25rem;
+}
+
+.curriculo__texto__lista {
+    font-family:var(--font-secundaria);
+    color: var(--c3);
+    font-size: 0.875rem;  
+}
+
+.foto {
+    margin: 7rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    border: 4px solid var(--c3); 
+    box-shadow: 5px 5px 5px var(--c1);
+    object-fit: cover;
+}
+
+
+.rodape {
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--c2);
+    background-color: var(--c1);
+    font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+    .cabecalho{
+        width: 85%;
+        padding: 7%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    .curriculo{
+        width: auto;
+    }
+    .foto {
+        width: 18rem;
+        height: 18rem;
+        margin: 1rem;
+        margin-left: auto;
+    }
+    
+}
